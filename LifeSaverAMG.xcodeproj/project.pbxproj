@@ -15,6 +15,7 @@
 		AB075FAE222F763900896882 /* LifeSaverAMGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB075FAD222F763900896882 /* LifeSaverAMGTests.swift */; };
 		AB075FB9222F763900896882 /* LifeSaverAMGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB075FB8222F763900896882 /* LifeSaverAMGUITests.swift */; };
 		AB8362EC223219BE002E565E /* ACUPDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8362EB223219BE002E565E /* ACUPDViewController.swift */; };
+		AB8362EE2232316E002E565E /* CounselingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8362ED2232316E002E565E /* CounselingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		AB075FB8222F763900896882 /* LifeSaverAMGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeSaverAMGUITests.swift; sourceTree = "<group>"; };
 		AB075FBA222F763900896882 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB8362EB223219BE002E565E /* ACUPDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACUPDViewController.swift; sourceTree = "<group>"; };
+		AB8362ED2232316E002E565E /* CounselingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounselingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				AB075F98222F763700896882 /* AppDelegate.swift */,
 				AB075F9A222F763700896882 /* ViewController.swift */,
 				AB8362EB223219BE002E565E /* ACUPDViewController.swift */,
+				AB8362ED2232316E002E565E /* CounselingViewController.swift */,
 				AB075F9C222F763700896882 /* Main.storyboard */,
 				AB075F9F222F763900896882 /* Assets.xcassets */,
 				AB075FA1222F763900896882 /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 				AB075F9B222F763700896882 /* ViewController.swift in Sources */,
 				AB8362EC223219BE002E565E /* ACUPDViewController.swift in Sources */,
 				AB075F99222F763700896882 /* AppDelegate.swift in Sources */,
+				AB8362EE2232316E002E565E /* CounselingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

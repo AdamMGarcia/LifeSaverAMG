@@ -56,6 +56,9 @@
                                                 <rect key="frame" x="-9" y="549" width="333" height="55"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Counciling Center" image="left oar"/>
+                                                <connections>
+                                                    <action selector="CounselingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CWx-EK-jId"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -85,6 +88,7 @@
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
                         <segue destination="jC3-pa-Fe0" kind="showDetail" identifier="ACUPDSegue" id="Uqm-t5-RFP"/>
+                        <segue destination="0Ib-vs-0jg" kind="showDetail" identifier="CounselingSegue" id="v6D-7d-8in"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -94,7 +98,7 @@
         <!--View Controller-->
         <scene sceneID="3Qr-Vw-wHd">
             <objects>
-                <viewController id="jC3-pa-Fe0" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ACUPDViewController" id="jC3-pa-Fe0" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gRh-4L-39Y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,18 +114,50 @@
                                 <rect key="frame" x="16" y="75" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="Sg1-lt-ba9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="GiI-Gv-uyF"/>
                     </view>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="ACUPDHomeSegue" id="TA6-vY-ae5"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JyV-nv-DU6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1991" y="-114"/>
+            <point key="canvasLocation" x="1990" y="-250"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Acz-N9-6R1">
+            <objects>
+                <viewController id="0Ib-vs-0jg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s8s-L6-iRx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Conseling Center" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ah3-nN-iR3">
+                                <rect key="frame" x="121" y="20" width="133" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAy-0X-BjS">
+                                <rect key="frame" x="16" y="55" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="7DK-6f-1AE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="AWK-0H-SSZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A9G-Tu-oZB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1990" y="522"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Zqr-je-Wfi">
@@ -147,6 +183,6 @@
         <image name="right oar" width="598" height="135"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="a7c-v8-DxQ"/>
+        <segue reference="7DK-6f-1AE"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -10,12 +10,6 @@ import UIKit
 
 class ACUPDViewController: UIViewController {
     
-    @IBAction func ACUPDBackButton(_ sender: UIButton) {
-        
-        print("ACUPDBackButton Pressed")
-        self.performSegue(withIdentifier: "ACUPDHomeSegue", sender: self)
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
