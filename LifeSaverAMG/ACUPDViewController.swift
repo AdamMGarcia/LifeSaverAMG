@@ -15,8 +15,6 @@ class ACUPDViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         
-        
-        
         //changes background color of the app
         self.view.backgroundColor = UIColor(red: 55/255, green: 176/255, blue: 203/255, alpha: 1)
     }
