@@ -1,30 +1,32 @@
 //
-//  ViewController.swift
+//  ACUPDViewController.swift
 //  LifeSaverAMG
 //
-//  Created by Adam Garcia on 3/5/19.
+//  Created by Adam Garcia on 3/7/19.
 //  Copyright © 2019 Adam Garcia. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class ACUPDViewController: UIViewController {
     
-    
-    @IBAction func ACUPDButton(_ sender: UIButton) {
+    @IBAction func ACUPDBackButton(_ sender: UIButton) {
         
-        print("Button Pressed")
-        self.performSegue(withIdentifier: "ACUPDSegue", sender: self)
+        print("ACUPDBackButton Pressed")
+        self.performSegue(withIdentifier: "ACUPDHomeSegue", sender: self)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        
+        
+        
         //changes background color of the app
         self.view.backgroundColor = UIColor(red: 55/255, green: 176/255, blue: 203/255, alpha: 1)
     }
-
-
+    
+    
 }
 
