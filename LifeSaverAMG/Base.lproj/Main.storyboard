@@ -21,20 +21,12 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s25-KB-Jvn">
-                                        <rect key="frame" x="8" y="-2" width="375" height="1000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Life Preserver" translatesAutoresizingMaskIntoConstraints="NO" id="iZu-oz-rtI">
                                                 <rect key="frame" x="-153" y="-19" width="505" height="269"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8R-NG-YLm">
-                                                <rect key="frame" x="67" y="529" width="300" height="61"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="ACUPD" image="right oar"/>
-                                                <connections>
-                                                    <action selector="ACUPDButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lnf-4l-1RW"/>
-                                                </connections>
-                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMn-DQ-qO0">
                                                 <rect key="frame" x="44" y="8" width="287" height="153"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -71,10 +63,24 @@ TO SELF OR OTHERS</string>
                                                 <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8R-NG-YLm">
+                                                <rect key="frame" x="75" y="529" width="300" height="61"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="U8R-NG-YLm" secondAttribute="height" multiplier="300:61" id="E8p-wG-7c7"/>
+                                                    <constraint firstAttribute="width" constant="300" id="GqV-mK-6fH"/>
+                                                    <constraint firstAttribute="height" constant="61" id="PEA-aV-kGh"/>
+                                                </constraints>
+                                                <state key="normal" title="ACUPD" image="right oar"/>
+                                                <connections>
+                                                    <action selector="ACUPDButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lnf-4l-1RW"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.2156862745" green="0.69019607839999997" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="U8R-NG-YLm" secondAttribute="trailing" id="RL2-w5-udH"/>
                                             <constraint firstAttribute="height" constant="1000" id="TqM-g9-9Qg"/>
+                                            <constraint firstAttribute="bottom" secondItem="U8R-NG-YLm" secondAttribute="bottom" constant="410" id="epZ-M5-cdJ"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -84,16 +90,24 @@ TO SELF OR OTHERS</string>
                                     <constraint firstAttribute="trailing" secondItem="s25-KB-Jvn" secondAttribute="trailing" id="o1f-Cb-BX7"/>
                                 </constraints>
                             </scrollView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Counciling Center" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSe-dM-xZ0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Counciling Center" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSe-dM-xZ0">
                                 <rect key="frame" x="31" y="738" width="137" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpt-xd-DBL">
-                                <rect key="frame" x="0.0" y="925" width="304" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ACU Logo" translatesAutoresizingMaskIntoConstraints="NO" id="xhv-zr-FDB">
+                                <rect key="frame" x="0.0" y="845" width="375" height="164"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xhv-zr-FDB" secondAttribute="height" multiplier="375:164" id="frj-qQ-JEC"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpt-xd-DBL">
+                                <rect key="frame" x="0.0" y="779" width="294" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="294" id="qsE-Zi-fGz"/>
+                                    <constraint firstAttribute="height" constant="52" id="uTg-xE-xn8"/>
+                                </constraints>
                                 <state key="normal" title="Counciling Center" image="left oar"/>
                                 <connections>
                                     <action selector="CounselingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CWx-EK-jId"/>
@@ -104,9 +118,15 @@ TO SELF OR OTHERS</string>
                         <constraints>
                             <constraint firstItem="SMu-Cm-7JO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4XS-Oa-hkn"/>
                             <constraint firstItem="SMu-Cm-7JO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5oN-nQ-M5g"/>
+                            <constraint firstItem="xhv-zr-FDB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="EFj-xH-fsV"/>
                             <constraint firstItem="SMu-Cm-7JO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="PUv-rE-sVt"/>
+                            <constraint firstAttribute="bottom" secondItem="xhv-zr-FDB" secondAttribute="bottom" constant="-9" id="T0d-bp-9VL"/>
                             <constraint firstItem="s25-KB-Jvn" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Tyl-qc-VMu"/>
+                            <constraint firstItem="xhv-zr-FDB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="epd-LP-2jk"/>
+                            <constraint firstItem="zpt-xd-DBL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hoh-cL-JgF"/>
+                            <constraint firstItem="zpt-xd-DBL" firstAttribute="top" secondItem="lSe-dM-xZ0" secondAttribute="bottom" constant="20" id="iPl-Hr-GDf"/>
                             <constraint firstItem="SMu-Cm-7JO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="j6T-8j-lZe"/>
+                            <constraint firstItem="xhv-zr-FDB" firstAttribute="top" secondItem="zpt-xd-DBL" secondAttribute="bottom" constant="14" id="mFS-Xo-2we"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -119,7 +139,7 @@ TO SELF OR OTHERS</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="962" y="148"/>
+            <point key="canvasLocation" x="960.79999999999995" y="147.52623688155924"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="3Qr-Vw-wHd">
@@ -129,26 +149,55 @@ TO SELF OR OTHERS</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYt-XA-LJV">
-                                <rect key="frame" x="0.0" y="96" width="327" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACU POLICE DEPARTMENT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0K8-mI-Vui">
+                                <rect key="frame" x="16" y="50" width="343" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0K8-mI-Vui" secondAttribute="height" multiplier="343:24" id="Yif-kb-bhy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EeU-dO-g30">
+                                <rect key="frame" x="16" y="82" width="343" height="147"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EeU-dO-g30" secondAttribute="height" multiplier="7:3" id="Pxh-is-ZOS"/>
+                                </constraints>
+                                <string key="text">acu.edu/acupolice
+325-674-2911 ~ acupolice@acu.edu
+
+Available 24 hours/day,365 days/year
+Can perform wellness checks
+Able to assist and refer</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYt-XA-LJV">
+                                <rect key="frame" x="0.0" y="559" width="321" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="DcI-yq-XcB"/>
+                                    <constraint firstAttribute="width" secondItem="nYt-XA-LJV" secondAttribute="height" multiplier="321:58" id="KEj-Xq-9rM"/>
+                                    <constraint firstAttribute="width" constant="321" id="zWi-mt-Crz"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="left oar"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="showDetail" id="Sg1-lt-ba9"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACUPD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0K8-mI-Vui">
-                                <rect key="frame" x="159" y="70" width="57" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.2156862745" green="0.69019607839999997" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="0K8-mI-Vui" firstAttribute="top" secondItem="GiI-Gv-uyF" secondAttribute="top" constant="50" id="2Uw-7n-y8i"/>
-                            <constraint firstItem="0K8-mI-Vui" firstAttribute="leading" secondItem="GiI-Gv-uyF" secondAttribute="leading" constant="159" id="CSk-M7-ggV"/>
-                            <constraint firstItem="GiI-Gv-uyF" firstAttribute="trailing" secondItem="0K8-mI-Vui" secondAttribute="trailing" constant="159" id="huc-Vn-ByC"/>
+                            <constraint firstItem="GiI-Gv-uyF" firstAttribute="trailing" secondItem="EeU-dO-g30" secondAttribute="trailing" constant="16" id="AUz-rC-TfY"/>
+                            <constraint firstItem="0K8-mI-Vui" firstAttribute="top" secondItem="GiI-Gv-uyF" secondAttribute="top" constant="30" id="BEm-QG-dJO"/>
+                            <constraint firstItem="GiI-Gv-uyF" firstAttribute="trailing" secondItem="nYt-XA-LJV" secondAttribute="trailing" constant="54" id="JKV-kz-yc3"/>
+                            <constraint firstItem="EeU-dO-g30" firstAttribute="leading" secondItem="GiI-Gv-uyF" secondAttribute="leading" constant="16" id="Klu-l6-Pqo"/>
+                            <constraint firstItem="EeU-dO-g30" firstAttribute="top" secondItem="0K8-mI-Vui" secondAttribute="bottom" constant="8" id="OSt-xX-5gb"/>
+                            <constraint firstItem="GiI-Gv-uyF" firstAttribute="bottom" secondItem="nYt-XA-LJV" secondAttribute="bottom" constant="50" id="OYK-Pc-sGZ"/>
+                            <constraint firstItem="0K8-mI-Vui" firstAttribute="leading" secondItem="GiI-Gv-uyF" secondAttribute="leading" constant="16" id="P7h-Ov-9ZU"/>
+                            <constraint firstItem="nYt-XA-LJV" firstAttribute="top" secondItem="EeU-dO-g30" secondAttribute="bottom" constant="330" id="Wga-Xv-3oC"/>
+                            <constraint firstItem="nYt-XA-LJV" firstAttribute="leading" secondItem="GiI-Gv-uyF" secondAttribute="leading" id="niC-hL-cms"/>
+                            <constraint firstItem="GiI-Gv-uyF" firstAttribute="trailing" secondItem="0K8-mI-Vui" secondAttribute="trailing" constant="16" id="xVG-A5-osE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GiI-Gv-uyF"/>
                     </view>
@@ -165,24 +214,51 @@ TO SELF OR OTHERS</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAy-0X-BjS">
-                                <rect key="frame" x="0.0" y="125" width="344" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conseling Center" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ah3-nN-iR3">
+                                <rect key="frame" x="16" y="50" width="343" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ah3-nN-iR3" secondAttribute="height" multiplier="343:33" id="qeJ-KA-qtw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1e-Ir-qTs">
+                                <rect key="frame" x="16" y="91" width="343" height="103"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="i1e-Ir-qTs" secondAttribute="height" multiplier="343:103" id="uMh-77-uvM"/>
+                                </constraints>
+                                <string key="text">acu.edu/counseling
+325-674-2626 ~ counseling@acu.edu
+
+Counselors are available for consultation during office hours</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAy-0X-BjS">
+                                <rect key="frame" x="0.0" y="522.5" width="335.5" height="63.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63.5" id="Ve7-2k-3Cj"/>
+                                    <constraint firstAttribute="width" constant="333.5" id="WP8-IY-wvV"/>
+                                    <constraint firstAttribute="width" secondItem="gAy-0X-BjS" secondAttribute="height" multiplier="37:7" id="tft-Ko-JXJ"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="left oar"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="showDetail" id="7DK-6f-1AE"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Conseling Center" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ah3-nN-iR3">
-                                <rect key="frame" x="117" y="70" width="140" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.21568627450980393" green="0.69019607843137254" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="ah3-nN-iR3" firstAttribute="top" secondItem="AWK-0H-SSZ" secondAttribute="top" constant="50" id="xTc-J1-H54"/>
+                            <constraint firstItem="i1e-Ir-qTs" firstAttribute="top" secondItem="ah3-nN-iR3" secondAttribute="bottom" constant="8" id="B8c-Sa-FDl"/>
+                            <constraint firstItem="AWK-0H-SSZ" firstAttribute="trailing" secondItem="ah3-nN-iR3" secondAttribute="trailing" constant="16" id="LtD-w6-TLY"/>
+                            <constraint firstItem="AWK-0H-SSZ" firstAttribute="trailing" secondItem="i1e-Ir-qTs" secondAttribute="trailing" constant="16" id="PCW-Im-vgt"/>
+                            <constraint firstItem="ah3-nN-iR3" firstAttribute="top" secondItem="AWK-0H-SSZ" secondAttribute="top" constant="30" id="PUB-NO-HHq"/>
+                            <constraint firstItem="AWK-0H-SSZ" firstAttribute="bottom" secondItem="gAy-0X-BjS" secondAttribute="bottom" constant="81" id="U7V-tA-A1d"/>
+                            <constraint firstItem="gAy-0X-BjS" firstAttribute="leading" secondItem="AWK-0H-SSZ" secondAttribute="leading" id="VUT-wc-Run"/>
+                            <constraint firstItem="i1e-Ir-qTs" firstAttribute="leading" secondItem="AWK-0H-SSZ" secondAttribute="leading" constant="16" id="aqK-KJ-n5g"/>
+                            <constraint firstItem="ah3-nN-iR3" firstAttribute="leading" secondItem="AWK-0H-SSZ" secondAttribute="leading" constant="16" id="gWm-fi-x8H"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AWK-0H-SSZ"/>
                     </view>
@@ -211,12 +287,13 @@ TO SELF OR OTHERS</string>
         </scene>
     </scenes>
     <resources>
+        <image name="ACU Logo" width="644" height="254"/>
         <image name="Life Preserver" width="399" height="405"/>
         <image name="left oar" width="598" height="125"/>
         <image name="right oar" width="598" height="135"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Uqm-t5-RFP"/>
-        <segue reference="Sg1-lt-ba9"/>
+        <segue reference="v6D-7d-8in"/>
+        <segue reference="7DK-6f-1AE"/>
     </inferredMetricsTieBreakers>
 </document>
