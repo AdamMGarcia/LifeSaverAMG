@@ -23,22 +23,23 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s25-KB-Jvn">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Life Preserver" translatesAutoresizingMaskIntoConstraints="NO" id="iZu-oz-rtI">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Life Preserver" translatesAutoresizingMaskIntoConstraints="NO" id="iZu-oz-rtI">
                                                 <rect key="frame" x="-153" y="-19" width="505" height="269"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="269" id="gBN-z1-pSg"/>
+                                                    <constraint firstAttribute="width" constant="505" id="uQP-E5-LM2"/>
+                                                </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMn-DQ-qO0">
-                                                <rect key="frame" x="44" y="8" width="287" height="153"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMn-DQ-qO0">
+                                                <rect key="frame" x="44" y="8" width="287" height="134"/>
                                                 <string key="text">BE A
 LIFESAVER</string>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="56"/>
                                                 <color key="textColor" red="0.28235294117647058" green="0.16470588235294117" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m7U-cw-BeY">
-                                                <rect key="frame" x="44" y="161" width="287" height="95"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m7U-cw-BeY">
+                                                <rect key="frame" x="44" y="142" width="287" height="79"/>
                                                 <string key="text">Quick Reference Guide for
 Threat Assessment and
 Suicide Prevention</string>
@@ -46,16 +47,8 @@ Suicide Prevention</string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ACUPD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0u-gx-Jpa">
-                                                <rect key="frame" x="254" y="581" width="57" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rwy-6z-Zce">
-                                                <rect key="frame" x="44" y="264" width="287" height="67"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rwy-6z-Zce">
+                                                <rect key="frame" x="0.0" y="292" width="375" height="48"/>
                                                 <color key="backgroundColor" red="0.28235294119999998" green="0.1647058824" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <string key="text">SIGNS OF POSSIBLE HARM
 TO SELF OR OTHERS</string>
@@ -64,23 +57,49 @@ TO SELF OR OTHERS</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8R-NG-YLm">
-                                                <rect key="frame" x="75" y="529" width="300" height="61"/>
+                                                <rect key="frame" x="75" y="566" width="300" height="61"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="U8R-NG-YLm" secondAttribute="height" multiplier="300:61" id="E8p-wG-7c7"/>
-                                                    <constraint firstAttribute="width" constant="300" id="GqV-mK-6fH"/>
-                                                    <constraint firstAttribute="height" constant="61" id="PEA-aV-kGh"/>
+                                                    <constraint firstAttribute="height" constant="61" id="2lc-mM-cVX"/>
+                                                    <constraint firstAttribute="width" constant="300" id="gyi-vN-Nh6"/>
                                                 </constraints>
                                                 <state key="normal" title="ACUPD" image="right oar"/>
                                                 <connections>
                                                     <action selector="ACUPDButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lnf-4l-1RW"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C6Y-wT-CAZ">
+                                                <rect key="frame" x="16" y="435" width="343" height="115"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="115" id="ZaA-gb-1xL"/>
+                                                    <constraint firstAttribute="width" constant="343" id="vFr-iK-jQq"/>
+                                                </constraints>
+                                                <string key="text">HAS THE STUDENT SAID
+OR DONE ANYTHING TO
+INDICATE A DIRECT THREAT
+TO SELF OR OTHERS?</string>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.2156862745" green="0.69019607839999997" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="U8R-NG-YLm" secondAttribute="trailing" id="RL2-w5-udH"/>
+                                            <constraint firstItem="RMn-DQ-qO0" firstAttribute="leading" secondItem="s25-KB-Jvn" secondAttribute="leading" constant="44" id="2gF-4B-5Kt"/>
+                                            <constraint firstItem="Rwy-6z-Zce" firstAttribute="top" secondItem="iZu-oz-rtI" secondAttribute="bottom" constant="42" id="7IX-au-31f"/>
+                                            <constraint firstAttribute="trailing" secondItem="C6Y-wT-CAZ" secondAttribute="trailing" constant="16" id="7xY-fk-1Rq"/>
+                                            <constraint firstAttribute="trailing" secondItem="Rwy-6z-Zce" secondAttribute="trailing" id="8Eg-FF-CO0"/>
+                                            <constraint firstItem="U8R-NG-YLm" firstAttribute="top" secondItem="C6Y-wT-CAZ" secondAttribute="bottom" constant="16" id="I72-Xs-73F"/>
+                                            <constraint firstItem="Rwy-6z-Zce" firstAttribute="leading" secondItem="s25-KB-Jvn" secondAttribute="leading" id="JMB-4G-LHp"/>
+                                            <constraint firstItem="C6Y-wT-CAZ" firstAttribute="top" secondItem="Rwy-6z-Zce" secondAttribute="bottom" constant="95" id="JXX-px-TGT"/>
+                                            <constraint firstAttribute="bottom" secondItem="U8R-NG-YLm" secondAttribute="bottom" constant="373" id="MeR-Ld-ubG"/>
+                                            <constraint firstItem="iZu-oz-rtI" firstAttribute="top" secondItem="s25-KB-Jvn" secondAttribute="top" constant="-19" id="NYv-LL-NGS"/>
                                             <constraint firstAttribute="height" constant="1000" id="TqM-g9-9Qg"/>
-                                            <constraint firstAttribute="bottom" secondItem="U8R-NG-YLm" secondAttribute="bottom" constant="410" id="epZ-M5-cdJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="U8R-NG-YLm" secondAttribute="trailing" id="aPy-Mq-pSo"/>
+                                            <constraint firstItem="C6Y-wT-CAZ" firstAttribute="leading" secondItem="s25-KB-Jvn" secondAttribute="leading" constant="16" id="c57-SM-hLo"/>
+                                            <constraint firstAttribute="trailing" secondItem="RMn-DQ-qO0" secondAttribute="trailing" constant="44" id="ehi-ad-zqD"/>
+                                            <constraint firstItem="RMn-DQ-qO0" firstAttribute="top" secondItem="s25-KB-Jvn" secondAttribute="top" constant="8" id="tBw-0b-kMC"/>
+                                            <constraint firstItem="iZu-oz-rtI" firstAttribute="leading" secondItem="s25-KB-Jvn" secondAttribute="leading" constant="-153" id="v26-Oh-r4T"/>
+                                            <constraint firstItem="m7U-cw-BeY" firstAttribute="top" secondItem="RMn-DQ-qO0" secondAttribute="bottom" id="zAX-hD-m7b"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -90,43 +109,63 @@ TO SELF OR OTHERS</string>
                                     <constraint firstAttribute="trailing" secondItem="s25-KB-Jvn" secondAttribute="trailing" id="o1f-Cb-BX7"/>
                                 </constraints>
                             </scrollView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Counciling Center" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSe-dM-xZ0">
-                                <rect key="frame" x="31" y="738" width="137" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSe-dM-xZ0">
+                                <rect key="frame" x="16" y="786" width="270" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="FTC-fP-I9O"/>
+                                    <constraint firstAttribute="height" constant="51" id="ne8-Bh-vZn"/>
+                                </constraints>
+                                <string key="text">Submit a SOAR referral or
+call325-674-2036; or contact the
+ACU Counseling Center at 325-674-2628</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ACU Logo" translatesAutoresizingMaskIntoConstraints="NO" id="xhv-zr-FDB">
                                 <rect key="frame" x="0.0" y="845" width="375" height="164"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="xhv-zr-FDB" secondAttribute="height" multiplier="375:164" id="frj-qQ-JEC"/>
-                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpt-xd-DBL">
-                                <rect key="frame" x="0.0" y="779" width="294" height="52"/>
+                                <rect key="frame" x="0.0" y="726" width="294" height="52"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="294" id="qsE-Zi-fGz"/>
-                                    <constraint firstAttribute="height" constant="52" id="uTg-xE-xn8"/>
+                                    <constraint firstAttribute="height" constant="52" id="f4m-Ym-bZY"/>
+                                    <constraint firstAttribute="width" constant="294" id="pRa-pK-vBE"/>
                                 </constraints>
                                 <state key="normal" title="Counciling Center" image="left oar"/>
                                 <connections>
                                     <action selector="CounselingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CWx-EK-jId"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0u-gx-Jpa">
+                                <rect key="frame" x="165" y="664" width="194" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="194" id="DAu-1V-PYf"/>
+                                    <constraint firstAttribute="height" constant="50" id="laY-BC-K8L"/>
+                                </constraints>
+                                <string key="text">Call the ACU Police
+Department at 325-674-2911</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.2156862745" green="0.69019607839999997" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="SMu-Cm-7JO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4XS-Oa-hkn"/>
                             <constraint firstItem="SMu-Cm-7JO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5oN-nQ-M5g"/>
-                            <constraint firstItem="xhv-zr-FDB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="EFj-xH-fsV"/>
+                            <constraint firstItem="xhv-zr-FDB" firstAttribute="top" secondItem="lSe-dM-xZ0" secondAttribute="bottom" constant="8" id="D5J-Og-SrY"/>
+                            <constraint firstAttribute="bottom" secondItem="xhv-zr-FDB" secondAttribute="bottom" constant="-9" id="FIT-Kf-DFk"/>
+                            <constraint firstItem="lSe-dM-xZ0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="GEc-rf-66e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M0u-gx-Jpa" secondAttribute="trailing" constant="16" id="NKn-5u-Mo8"/>
+                            <constraint firstItem="zpt-xd-DBL" firstAttribute="top" secondItem="M0u-gx-Jpa" secondAttribute="bottom" constant="12" id="NQn-05-DCh"/>
                             <constraint firstItem="SMu-Cm-7JO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="PUv-rE-sVt"/>
-                            <constraint firstAttribute="bottom" secondItem="xhv-zr-FDB" secondAttribute="bottom" constant="-9" id="T0d-bp-9VL"/>
+                            <constraint firstItem="zpt-xd-DBL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="THc-bq-xIF"/>
                             <constraint firstItem="s25-KB-Jvn" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Tyl-qc-VMu"/>
-                            <constraint firstItem="xhv-zr-FDB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="epd-LP-2jk"/>
-                            <constraint firstItem="zpt-xd-DBL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hoh-cL-JgF"/>
-                            <constraint firstItem="zpt-xd-DBL" firstAttribute="top" secondItem="lSe-dM-xZ0" secondAttribute="bottom" constant="20" id="iPl-Hr-GDf"/>
+                            <constraint firstItem="M0u-gx-Jpa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="644" id="W1B-Wj-suD"/>
+                            <constraint firstItem="lSe-dM-xZ0" firstAttribute="top" secondItem="zpt-xd-DBL" secondAttribute="bottom" constant="8" id="i8d-9s-Vv8"/>
                             <constraint firstItem="SMu-Cm-7JO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="j6T-8j-lZe"/>
-                            <constraint firstItem="xhv-zr-FDB" firstAttribute="top" secondItem="zpt-xd-DBL" secondAttribute="bottom" constant="14" id="mFS-Xo-2we"/>
+                            <constraint firstItem="xhv-zr-FDB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mJA-YS-0xd"/>
+                            <constraint firstItem="xhv-zr-FDB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="p6t-nG-Ug4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -208,8 +247,8 @@ Able to assist and refer</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conseling Center" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ah3-nN-iR3">
-                                <rect key="frame" x="16" y="50" width="343" height="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counseling Center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ah3-nN-iR3">
+                                <rect key="frame" x="16" y="50" width="338" height="32.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ah3-nN-iR3" secondAttribute="height" multiplier="343:33" id="qeJ-KA-qtw"/>
                                 </constraints>
@@ -218,11 +257,12 @@ Able to assist and refer</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1e-Ir-qTs">
-                                <rect key="frame" x="16" y="91" width="343" height="101.5"/>
+                                <rect key="frame" x="16" y="90.5" width="338" height="101.5"/>
                                 <string key="text">acu.edu/counseling
 325-674-2626 ~ counseling@acu.edu
 
-Counselors are available for consultation during office hours</string>
+Counselors are available for
+consultation during office hours</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -238,17 +278,54 @@ Counselors are available for consultation during office hours</string>
                                     <segue destination="BYZ-38-t0r" kind="showDetail" id="7DK-6f-1AE"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ucd-OB-cW3">
+                                <rect key="frame" x="16" y="227" width="338" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="370" id="1Tz-80-mWh"/>
+                                    <constraint firstAttribute="height" constant="33" id="kZU-CZ-qiZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student Opportunites, Advocacy and Resources" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWr-aE-syE">
+                                <rect key="frame" x="16" y="262" width="338" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YqI-Fh-Tac">
+                                <rect key="frame" x="16" y="295" width="339" height="122"/>
+                                <string key="text">acu.edu/soar
+325674-2036 ~ soar@acu.edu
+
+SOAR will contact the student and offer help
+to assess the sistuation and direct them to
+the appropriate source.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.21568627450980393" green="0.69019607843137254" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="Ucd-OB-cW3" firstAttribute="leading" secondItem="AWK-0H-SSZ" secondAttribute="leading" constant="16" id="60y-mE-FAz"/>
                             <constraint firstItem="AWK-0H-SSZ" firstAttribute="bottom" secondItem="gAy-0X-BjS" secondAttribute="bottom" constant="50" id="6zN-dV-dtq"/>
+                            <constraint firstItem="AWK-0H-SSZ" firstAttribute="trailing" secondItem="YqI-Fh-Tac" secondAttribute="trailing" constant="15" id="CeU-JI-ssQ"/>
+                            <constraint firstItem="CWr-aE-syE" firstAttribute="top" secondItem="Ucd-OB-cW3" secondAttribute="bottom" constant="2" id="JbP-3P-0tZ"/>
                             <constraint firstItem="gAy-0X-BjS" firstAttribute="leading" secondItem="AWK-0H-SSZ" secondAttribute="leading" id="Lp8-tX-mre"/>
                             <constraint firstItem="AWK-0H-SSZ" firstAttribute="trailing" secondItem="ah3-nN-iR3" secondAttribute="trailing" constant="16" id="LtD-w6-TLY"/>
                             <constraint firstItem="ah3-nN-iR3" firstAttribute="top" secondItem="AWK-0H-SSZ" secondAttribute="top" constant="30" id="PUB-NO-HHq"/>
+                            <constraint firstItem="YqI-Fh-Tac" firstAttribute="top" secondItem="CWr-aE-syE" secondAttribute="bottom" constant="16" id="RcF-tL-GH8"/>
+                            <constraint firstItem="AWK-0H-SSZ" firstAttribute="trailing" secondItem="CWr-aE-syE" secondAttribute="trailing" constant="16" id="byD-Fg-QCT"/>
                             <constraint firstItem="i1e-Ir-qTs" firstAttribute="leading" secondItem="AWK-0H-SSZ" secondAttribute="leading" constant="16" id="erO-Dw-DpR"/>
                             <constraint firstItem="ah3-nN-iR3" firstAttribute="leading" secondItem="AWK-0H-SSZ" secondAttribute="leading" constant="16" id="gWm-fi-x8H"/>
                             <constraint firstItem="AWK-0H-SSZ" firstAttribute="trailing" secondItem="i1e-Ir-qTs" secondAttribute="trailing" constant="16" id="gjt-51-lvM"/>
+                            <constraint firstItem="Ucd-OB-cW3" firstAttribute="top" secondItem="i1e-Ir-qTs" secondAttribute="bottom" constant="35" id="jLQ-Xo-hXK"/>
+                            <constraint firstItem="YqI-Fh-Tac" firstAttribute="leading" secondItem="AWK-0H-SSZ" secondAttribute="leading" constant="16" id="lUe-vk-SuL"/>
                             <constraint firstItem="i1e-Ir-qTs" firstAttribute="top" secondItem="ah3-nN-iR3" secondAttribute="bottom" constant="8" id="ln4-Tg-mpj"/>
+                            <constraint firstItem="CWr-aE-syE" firstAttribute="leading" secondItem="AWK-0H-SSZ" secondAttribute="leading" constant="16" id="mVE-Qf-idX"/>
+                            <constraint firstItem="AWK-0H-SSZ" firstAttribute="trailing" secondItem="Ucd-OB-cW3" secondAttribute="trailing" constant="16" id="rTv-QZ-ubB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AWK-0H-SSZ"/>
                     </view>
