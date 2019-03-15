@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zsa-QW-y81">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zsa-QW-y81">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,11 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SMu-Cm-7JO">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" contentInsetAdjustmentBehavior="scrollableAxes" translatesAutoresizingMaskIntoConstraints="NO" id="SMu-Cm-7JO">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s25-KB-Jvn">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s25-KB-Jvn">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Life Preserver" translatesAutoresizingMaskIntoConstraints="NO" id="iZu-oz-rtI">
                                                 <rect key="frame" x="-153" y="-19" width="505" height="269"/>
@@ -159,10 +159,7 @@ TO SELF OR OTHERS</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EeU-dO-g30">
-                                <rect key="frame" x="16" y="82" width="343" height="147"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="EeU-dO-g30" secondAttribute="height" multiplier="7:3" id="Pxh-is-ZOS"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="82" width="343" height="122"/>
                                 <string key="text">acu.edu/acupolice
 325-674-2911 ~ acupolice@acu.edu
 
@@ -176,9 +173,8 @@ Able to assist and refer</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYt-XA-LJV">
                                 <rect key="frame" x="0.0" y="559" width="321" height="58"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="58" id="DcI-yq-XcB"/>
-                                    <constraint firstAttribute="width" secondItem="nYt-XA-LJV" secondAttribute="height" multiplier="321:58" id="KEj-Xq-9rM"/>
-                                    <constraint firstAttribute="width" constant="321" id="zWi-mt-Crz"/>
+                                    <constraint firstAttribute="height" constant="58" id="Z85-xe-nXy"/>
+                                    <constraint firstAttribute="width" constant="321" id="gGz-GN-W2F"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="left oar"/>
                                 <connections>
@@ -188,15 +184,13 @@ Able to assist and refer</string>
                         </subviews>
                         <color key="backgroundColor" red="0.2156862745" green="0.69019607839999997" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="GiI-Gv-uyF" firstAttribute="trailing" secondItem="EeU-dO-g30" secondAttribute="trailing" constant="16" id="AUz-rC-TfY"/>
+                            <constraint firstItem="GiI-Gv-uyF" firstAttribute="bottom" secondItem="nYt-XA-LJV" secondAttribute="bottom" constant="50" id="3VJ-sg-4Bd"/>
                             <constraint firstItem="0K8-mI-Vui" firstAttribute="top" secondItem="GiI-Gv-uyF" secondAttribute="top" constant="30" id="BEm-QG-dJO"/>
-                            <constraint firstItem="GiI-Gv-uyF" firstAttribute="trailing" secondItem="nYt-XA-LJV" secondAttribute="trailing" constant="54" id="JKV-kz-yc3"/>
-                            <constraint firstItem="EeU-dO-g30" firstAttribute="leading" secondItem="GiI-Gv-uyF" secondAttribute="leading" constant="16" id="Klu-l6-Pqo"/>
-                            <constraint firstItem="EeU-dO-g30" firstAttribute="top" secondItem="0K8-mI-Vui" secondAttribute="bottom" constant="8" id="OSt-xX-5gb"/>
-                            <constraint firstItem="GiI-Gv-uyF" firstAttribute="bottom" secondItem="nYt-XA-LJV" secondAttribute="bottom" constant="50" id="OYK-Pc-sGZ"/>
+                            <constraint firstItem="GiI-Gv-uyF" firstAttribute="trailing" secondItem="EeU-dO-g30" secondAttribute="trailing" constant="16" id="Oc9-Wq-Shh"/>
                             <constraint firstItem="0K8-mI-Vui" firstAttribute="leading" secondItem="GiI-Gv-uyF" secondAttribute="leading" constant="16" id="P7h-Ov-9ZU"/>
-                            <constraint firstItem="nYt-XA-LJV" firstAttribute="top" secondItem="EeU-dO-g30" secondAttribute="bottom" constant="330" id="Wga-Xv-3oC"/>
-                            <constraint firstItem="nYt-XA-LJV" firstAttribute="leading" secondItem="GiI-Gv-uyF" secondAttribute="leading" id="niC-hL-cms"/>
+                            <constraint firstItem="EeU-dO-g30" firstAttribute="top" secondItem="0K8-mI-Vui" secondAttribute="bottom" constant="8" id="cfs-d3-TTr"/>
+                            <constraint firstItem="EeU-dO-g30" firstAttribute="leading" secondItem="GiI-Gv-uyF" secondAttribute="leading" constant="16" id="g1z-cu-aKe"/>
+                            <constraint firstItem="nYt-XA-LJV" firstAttribute="leading" secondItem="GiI-Gv-uyF" secondAttribute="leading" id="uSj-rq-Wly"/>
                             <constraint firstItem="GiI-Gv-uyF" firstAttribute="trailing" secondItem="0K8-mI-Vui" secondAttribute="trailing" constant="16" id="xVG-A5-osE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GiI-Gv-uyF"/>
@@ -224,10 +218,7 @@ Able to assist and refer</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1e-Ir-qTs">
-                                <rect key="frame" x="16" y="91" width="343" height="103"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="i1e-Ir-qTs" secondAttribute="height" multiplier="343:103" id="uMh-77-uvM"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="91" width="343" height="101.5"/>
                                 <string key="text">acu.edu/counseling
 325-674-2626 ~ counseling@acu.edu
 
@@ -237,11 +228,10 @@ Counselors are available for consultation during office hours</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAy-0X-BjS">
-                                <rect key="frame" x="0.0" y="522.5" width="335.5" height="63.5"/>
+                                <rect key="frame" x="0.0" y="559" width="321" height="58"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="63.5" id="Ve7-2k-3Cj"/>
-                                    <constraint firstAttribute="width" constant="333.5" id="WP8-IY-wvV"/>
-                                    <constraint firstAttribute="width" secondItem="gAy-0X-BjS" secondAttribute="height" multiplier="37:7" id="tft-Ko-JXJ"/>
+                                    <constraint firstAttribute="width" constant="321" id="fgG-94-rlF"/>
+                                    <constraint firstAttribute="height" constant="58" id="goz-EH-QXM"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="left oar"/>
                                 <connections>
@@ -251,14 +241,14 @@ Counselors are available for consultation during office hours</string>
                         </subviews>
                         <color key="backgroundColor" red="0.21568627450980393" green="0.69019607843137254" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="i1e-Ir-qTs" firstAttribute="top" secondItem="ah3-nN-iR3" secondAttribute="bottom" constant="8" id="B8c-Sa-FDl"/>
+                            <constraint firstItem="AWK-0H-SSZ" firstAttribute="bottom" secondItem="gAy-0X-BjS" secondAttribute="bottom" constant="50" id="6zN-dV-dtq"/>
+                            <constraint firstItem="gAy-0X-BjS" firstAttribute="leading" secondItem="AWK-0H-SSZ" secondAttribute="leading" id="Lp8-tX-mre"/>
                             <constraint firstItem="AWK-0H-SSZ" firstAttribute="trailing" secondItem="ah3-nN-iR3" secondAttribute="trailing" constant="16" id="LtD-w6-TLY"/>
-                            <constraint firstItem="AWK-0H-SSZ" firstAttribute="trailing" secondItem="i1e-Ir-qTs" secondAttribute="trailing" constant="16" id="PCW-Im-vgt"/>
                             <constraint firstItem="ah3-nN-iR3" firstAttribute="top" secondItem="AWK-0H-SSZ" secondAttribute="top" constant="30" id="PUB-NO-HHq"/>
-                            <constraint firstItem="AWK-0H-SSZ" firstAttribute="bottom" secondItem="gAy-0X-BjS" secondAttribute="bottom" constant="81" id="U7V-tA-A1d"/>
-                            <constraint firstItem="gAy-0X-BjS" firstAttribute="leading" secondItem="AWK-0H-SSZ" secondAttribute="leading" id="VUT-wc-Run"/>
-                            <constraint firstItem="i1e-Ir-qTs" firstAttribute="leading" secondItem="AWK-0H-SSZ" secondAttribute="leading" constant="16" id="aqK-KJ-n5g"/>
+                            <constraint firstItem="i1e-Ir-qTs" firstAttribute="leading" secondItem="AWK-0H-SSZ" secondAttribute="leading" constant="16" id="erO-Dw-DpR"/>
                             <constraint firstItem="ah3-nN-iR3" firstAttribute="leading" secondItem="AWK-0H-SSZ" secondAttribute="leading" constant="16" id="gWm-fi-x8H"/>
+                            <constraint firstItem="AWK-0H-SSZ" firstAttribute="trailing" secondItem="i1e-Ir-qTs" secondAttribute="trailing" constant="16" id="gjt-51-lvM"/>
+                            <constraint firstItem="i1e-Ir-qTs" firstAttribute="top" secondItem="ah3-nN-iR3" secondAttribute="bottom" constant="8" id="ln4-Tg-mpj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AWK-0H-SSZ"/>
                     </view>
@@ -287,13 +277,12 @@ Counselors are available for consultation during office hours</string>
         </scene>
     </scenes>
     <resources>
-        <image name="ACU Logo" width="644" height="254"/>
-        <image name="Life Preserver" width="399" height="405"/>
-        <image name="left oar" width="598" height="125"/>
-        <image name="right oar" width="598" height="135"/>
+        <image name="ACU Logo" width="644.5" height="254"/>
+        <image name="Life Preserver" width="399.5" height="405"/>
+        <image name="left oar" width="598.5" height="125"/>
+        <image name="right oar" width="598.5" height="135"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="v6D-7d-8in"/>
         <segue reference="7DK-6f-1AE"/>
     </inferredMetricsTieBreakers>
 </document>
